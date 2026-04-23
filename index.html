@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pallavi Guddeti | Data Engineer</title>
+  <style>
+    :root {
+      --bg: #020617;
+      --panel: #0f172a;
+      --panel-2: #111827;
+      --text: #e2e8f0;
+      --muted: #94a3b8;
+      --border: #1e293b;
+      --accent: #34d399;
+      --white: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+    header {
+      position: sticky; top: 0; z-index: 50;
+      background: rgba(2, 6, 23, 0.92);
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(10px);
+    }
+    .nav { display: flex; justify-content: space-between; align-items: center; padding: 18px 0; }
+    .brand h1 { margin: 0; font-size: 20px; }
+    .brand p { margin: 2px 0 0; color: var(--muted); font-size: 14px; }
+    .nav-links { display: flex; gap: 22px; }
+    .nav-links a { color: #cbd5e1; text-decoration: none; font-size: 14px; }
+    section { padding: 72px 0; }
+    .hero { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 40px; align-items: center; }
+    .pill {
+      display: inline-block; padding: 8px 14px; border-radius: 999px;
+      background: rgba(52, 211, 153, 0.12); color: #86efac; border: 1px solid rgba(52, 211, 153, 0.22);
+      font-size: 14px;
+    }
+    .hero h2 { font-size: 52px; line-height: 1.1; margin: 18px 0; }
+    .hero p { font-size: 18px; color: #cbd5e1; max-width: 700px; }
+    .button-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+    .btn {
+      display: inline-block; padding: 12px 18px; border-radius: 16px; text-decoration: none;
+      border: 1px solid var(--border); color: var(--white); background: transparent;
+    }
+    .btn.primary { background: var(--white); color: #020617; border-color: var(--white); }
+    .card, .panel {
+      background: var(--panel); border: 1px solid var(--border); border-radius: 28px;
+      padding: 28px; box-shadow: 0 16px 40px rgba(0,0,0,0.18);
+    }
+    .stats { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 16px; }
+    .stat { background: var(--panel); border: 1px solid var(--border); border-radius: 24px; padding: 24px; }
+    .stat strong { font-size: 34px; display: block; }
+    .split { display: grid; grid-template-columns: 0.7fr 1.3fr; gap: 28px; align-items: start; }
+    .section-title { font-size: 34px; margin: 0; }
+    .experience-list, .projects, .skills-grid { display: grid; gap: 24px; }
+    .exp-header { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; align-items: start; }
+    .badge { border: 1px solid #334155; border-radius: 999px; padding: 6px 12px; color: #cbd5e1; font-size: 14px; }
+    ul { padding-left: 20px; }
+    li { margin: 10px 0; color: #cbd5e1; }
+    .projects { grid-template-columns: 1fr 1fr; }
+    .skills-grid { grid-template-columns: repeat(3, 1fr); }
+    .muted { color: var(--muted); }
+    .contact { background: linear-gradient(135deg, #0f172a, #020617); }
+    .contact-grid { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 28px; align-items: end; }
+    .skills-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
+    .tag { border: 1px solid #334155; background: #020617; padding: 8px 12px; border-radius: 999px; font-size: 14px; color: #cbd5e1; }
+    @media (max-width: 900px) {
+      .hero, .split, .contact-grid, .projects, .skills-grid { grid-template-columns: 1fr; }
+      .nav-links { display: none; }
+      .hero h2 { font-size: 38px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <h1>Pallavi Guddeti</h1>
+        <p>Data Engineer</p>
+      </div>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <div class="pill">Open to Data Engineering Opportunities</div>
+        <h2>Building scalable data pipelines, analytics workflows, and cloud-driven solutions.</h2>
+        <p>Data Engineer with 4+ years of experience designing ETL pipelines, cloud-based analytics workflows, and production-ready data solutions across financial services, automotive, and data-driven environments.</p>
+        <div class="button-row">
+          <a class="btn primary" href="#projects">View My Work</a>
+          <a class="btn" href="#contact">Contact Me</a>
+          <a class="btn" href="https://www.linkedin.com/in/pallavi-guddeti-2bb902224">LinkedIn</a>
+          <a class="btn" href="#">GitHub</a>
+        </div>
+      </div>
+      <div>
+        <div class="card">
+          <div class="muted">Current Focus</div>
+          <h3>Data Engineering</h3>
+          <p class="muted">ETL pipelines, cloud platforms, scalable analytics workflows, SQL optimization, BI reporting, and production-ready data systems.</p>
+        </div>
+        <div class="stats">
+          <div class="stat"><strong>4+</strong><span class="muted">Years of experience</span></div>
+          <div class="stat"><strong>3</strong><span class="muted">Domains worked across</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="split">
+      <h2 class="section-title">About</h2>
+      <div class="panel">
+        <p>I build reliable data systems that transform raw data into accessible, high-quality, decision-ready assets. My work spans ETL development, data modeling, workflow automation, reporting, and machine learning support.</p>
+        <p>I enjoy solving problems at the intersection of engineering and analytics—whether that means improving SQL performance, orchestrating scalable pipelines, integrating enterprise data sources, or creating dashboards that help stakeholders act faster.</p>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="exp-header">
+        <h2 class="section-title">Experience</h2>
+        <div class="muted">Finance • Automotive • Analytics</div>
+      </div>
+      <div class="experience-list">
+        <div class="panel">
+          <div class="exp-header">
+            <div>
+              <h3>Data Engineer</h3>
+              <div>Truist Financial</div>
+              <div class="muted">Charlotte, North Carolina</div>
+            </div>
+            <div class="badge">Aug 2024 – Present</div>
+          </div>
+          <ul>
+            <li>Develop ETL pipelines using Python and SQL to support analytics and machine learning workflows.</li>
+            <li>Build scalable data pipelines that integrate data from multiple enterprise systems for downstream reporting and analysis.</li>
+            <li>Support machine learning use cases including text analytics, forecasting, recommendation systems, and predictive modeling.</li>
+            <li>Apply feature engineering, preprocessing, and dimensionality reduction techniques to improve model and analytics performance.</li>
+            <li>Design Power BI and Tableau dashboards to monitor KPIs, operational metrics, and business performance.</li>
+            <li>Use AWS, Azure, and GCP for cloud-based storage, model workflows, and deployment-ready data solutions.</li>
+            <li>Process large-scale datasets with Apache Spark and Hadoop for scalable transformation and analytics.</li>
+            <li>Collaborate with cross-functional teams to deliver reliable, production-oriented data solutions.</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <div class="exp-header">
+            <div>
+              <h3>ETL Data Engineer</h3>
+              <div>Ford Motors</div>
+              <div class="muted">Chennai, India</div>
+            </div>
+            <div class="badge">Mar 2022 – Dec 2023</div>
+          </div>
+          <ul>
+            <li>Developed and maintained ETL workflows in Informatica PowerCenter across multiple source systems.</li>
+            <li>Built data integration solutions using Oracle, SQL Server, flat files, Excel, and APIs for warehousing and reporting.</li>
+            <li>Improved ETL performance through partitioning, pushdown optimization, and incremental loading strategies.</li>
+            <li>Designed star schema and snowflake schema models for analytics and structured reporting requirements.</li>
+            <li>Automated scheduling and monitoring with Control-M, AutoSys, and Unix Cron.</li>
+            <li>Performed data validation, issue resolution, and production support to maintain data accuracy and consistency.</li>
+            <li>Created reusable ETL mappings and transformation logic to improve maintainability.</li>
+            <li>Prepared high-quality datasets for business reporting and analysis.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects">
+        <div class="panel"><div class="muted">Python, SQL, AWS, Spark</div><h3>Enterprise ETL Pipeline Modernization</h3><p class="muted">Designed and maintained scalable ETL pipelines to ingest and transform data from multiple enterprise sources, improving data consistency and supporting downstream analytics.</p></div>
+        <div class="panel"><div class="muted">Power BI, Tableau, SQL</div><h3>KPI Dashboard and Reporting Suite</h3><p class="muted">Built dashboard solutions to track operational KPIs and business metrics, improving visibility for technical and business stakeholders.</p></div>
+        <div class="panel"><div class="muted">Python, Scikit-learn, Spark, Cloud Platforms</div><h3>Predictive Analytics and Forecasting Workflow</h3><p class="muted">Supported predictive modeling and time-series workflows through feature engineering, data preparation, and production-oriented analytics support.</p></div>
+        <div class="panel"><div class="muted">Informatica PowerCenter, Oracle, SQL Server, Unix</div><h3>Informatica Data Integration Framework</h3><p class="muted">Developed reusable ETL mappings and automated workflows to integrate enterprise data into reporting-ready datasets.</p></div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="panel"><h3>Data Engineering</h3><div class="skills-tags"><span class="tag">ETL Development</span><span class="tag">Data Integration</span><span class="tag">Data Modeling</span><span class="tag">Data Quality Validation</span><span class="tag">Workflow Automation</span><span class="tag">Feature Engineering</span><span class="tag">REST API Integration</span><span class="tag">Production Support</span></div></div>
+        <div class="panel"><h3>Programming</h3><div class="skills-tags"><span class="tag">Python</span><span class="tag">SQL</span><span class="tag">Bash</span><span class="tag">R</span><span class="tag">Java (basic)</span></div></div>
+        <div class="panel"><h3>Cloud & Big Data</h3><div class="skills-tags"><span class="tag">AWS</span><span class="tag">GCP</span><span class="tag">Azure ML</span><span class="tag">Databricks</span><span class="tag">Snowflake</span><span class="tag">Apache Spark</span><span class="tag">PySpark</span><span class="tag">Hadoop</span></div></div>
+        <div class="panel"><h3>BI & Visualization</h3><div class="skills-tags"><span class="tag">Power BI</span><span class="tag">Tableau</span><span class="tag">Plotly</span><span class="tag">Excel</span></div></div>
+        <div class="panel"><h3>Tools & Platforms</h3><div class="skills-tags"><span class="tag">Informatica PowerCenter</span><span class="tag">Airflow</span><span class="tag">Git</span><span class="tag">Docker</span><span class="tag">Kubernetes</span><span class="tag">MLflow</span><span class="tag">FastAPI</span><span class="tag">Flask</span><span class="tag">Linux</span></div></div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact panel">
+      <div class="contact-grid">
+        <div>
+          <div class="muted">CONTACT</div>
+          <h2 class="section-title">Let’s connect.</h2>
+          <p class="muted">I’m actively exploring Data Engineer opportunities where I can contribute to scalable data platforms, ETL modernization, analytics enablement, and cloud-based engineering solutions.</p>
+        </div>
+        <div>
+          <p><strong>Email:</strong> gpallavi2k1@gmail.com</p>
+          <p><strong>Location:</strong> Seattle, WA</p>
+          <p><strong>Phone:</strong> (201) 526-5799</p>
+          <p><strong>LinkedIn:</strong> www.linkedin.com/in/pallavi-guddeti-2bb902224</p>
+          <p><strong>GitHub:</strong> www.linkedin.com/in/pallavi-guddeti-2bb902224</p>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
